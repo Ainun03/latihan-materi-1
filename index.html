@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Materi 1</title>
+
+<!-- CSS Internal -->
+    <style>
+        .container{
+            display: grid;
+            border: 5px gray;  
+            box-sizing: border-box;  
+            border-style: double;
+        }
+        .content{
+            padding: 50px;
+            border: 2px black;
+            box-sizing: border-box;
+        }
+        
+        @media screen and (min-width: 960px){
+              .container{
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+          }
+        @media screen and (max-width: 960px){
+              .container{
+                display: grid;
+                grid-template-columns: auto auto ;
+            }
+          }
+        
+        @media screen and (max-width: 600px)  {
+            .container{
+                display: grid;
+                grid-template-columns: auto;
+            }
+          }
+               
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content" style="background-color: red;width:100%;" id="red"></div>
+        <div class="content" style="background-color: green;width:100%"; id="green"></div>
+        <div class="content" style="background-color: blue;width:100%;" id="blue"></div>
+        <div class="content" style="background-color: yellow;width:100%;"  id="yellow"></div>
+        <div class="content" style="background-color: purple;width:100%;" id="purple"></div>
+        <div class="content" style="background-color: gray;width:100%;" id="gray"></div>
+    </div>
+    
+</body>
+</html>
